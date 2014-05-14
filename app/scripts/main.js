@@ -35,12 +35,12 @@ $('.button-toggle').click(function() {
 });
 
 var para = $('.button-detach').click(function() {
-  if (para) {
-    para.appendTo('detach');
-    para = null;
-  } else {
-    para = $('.para').detach();
-  }
+	if (para) {
+    	para.appendTo('detach');
+    	para = null;
+  	} else {
+    	para = $('.para').detach();
+	}
 });
 
 
@@ -57,5 +57,26 @@ $('.button-timestamp').click(function(time) {
 $('.button-event-type').click(function(click) {
 	alert(click.type);
 });
+
+
+$('.button-animate').click(function() {
+	$('.animate').animate({
+    	opacity: 0.1,
+    	width: "100px",
+    	height: "100px"
+  	}, 
+5000, function() {
+  });
+});
+
+//these two appear before and after the obj + margins
+$('.button-beaf').click(function() {
+	$('.beaf').before("<p>Hello!</p>");
+});
+
+$('.button-beaf').click(function() {
+	$('.beaf').after("<p>Good bye!</p>");
+});
+
 
 
