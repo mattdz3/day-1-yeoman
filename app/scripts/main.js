@@ -30,7 +30,7 @@ $('.button-slidedown').click(function() {
 
 
 $('.button-toggle').click(function() {
-	$('.toggle').toggle('fast', function() {
+	$('.toggle').toggle('slow', function() {
 	});
 });
 
@@ -78,5 +78,9 @@ $('.button-beaf').click(function() {
 	$('.beaf').after("<p>Good bye!</p>");
 });
 
+//wow it clones the first one then clones both. its exponential!
+$('.button-clone').click(function() {
+	$('.clones').clone().appendTo('.clone');	
+});
 
 

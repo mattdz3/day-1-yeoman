@@ -15,8 +15,8 @@ body {
 
 .wrapper {
     position: absolute;
-    margin-left: 500px;
-    margin-right: 600px;
+    margin-left: 550px;
+    margin-right: 700px;
 }
 
 .button {
@@ -33,6 +33,7 @@ body {
 }
 
 .example {
+    color: white;
     font-size: 20px;
     text-align: center;
     line-height: 100px;
@@ -40,7 +41,7 @@ body {
     margin-top: 100px;
     width: 300px;
     height: 300px;
-    background-color: blue;
+    background-color: rgb(7, 35, 145);
 
     .example.timestamp {
         font-size: 20px;
@@ -167,6 +168,19 @@ body {
 }
 
 .button-beaf {
+    margin-left: 80px;
+    position: center;
+    width: 150px;
+    height: 60px;
+    color: white;
+    background-color: rgb(7, 35, 145);
+    text-align: center;
+    font-size: 25px;
+    line-height: 55px;
+    border-radius: 6px;
+}
+
+.button-clone {
     margin-left: 80px;
     position: center;
     width: 150px;
